@@ -23,7 +23,7 @@ undrw_3=os.path.join(app.config["UPLOAD_FOLDER"],"undraw_three.png")
 undrw_4=os.path.join(app.config["UPLOAD_FOLDER"],"undraw_four.png")
 bg=os.path.join(app.config["UPLOAD_FOLDER"],"newbg.jpg")
 #csvfile=os.path.join(app.config["UPLOAD_FOLDER"],"demoquery.csv")
-model2=pickle.load(open('rfc_file_final.pkl','rb'))
+#model2=pickle.load(open('C:\\Users\\kame1005\\Desktop\\vs code projects\\PythonProjects\\rfc_file_final.pkl','rb'))
 
 @app.route('/')
 def index():
