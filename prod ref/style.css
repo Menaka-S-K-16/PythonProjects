@@ -1,0 +1,366 @@
+.ProductPanel .x-panel-header{
+    background-color: #121111;
+}
+
+/* .x-panel-header-text-default {
+color: #333333;
+} */
+
+.userPrivilegeButton {
+background: transparent url(./resources/images/userPrivilege2.png) 0 0
+    no-repeat !important;
+display: block;
+}
+
+.proViewerButton {
+background: transparent url(./resources/images/proViewer.png) 0 0
+    no-repeat !important;
+}
+
+.ruleSetButton {
+background: transparent url(./resources/images/ruleSetButton.png) 0 0
+    no-repeat !important;
+}
+
+.x-panel .customPanel {
+border: 5px solid rgb(71, 76, 32);
+}
+
+/* Added by jinksy02(syam) for PRODREF */
+
+/* Class to style Application Header*/
+.headerPanelBodyStyle{   
+/*     background-color:#000000; 
+background: -ms-linear-gradient(top, #0d0d0d, #000000) !important;
+background: -webkit-linear-gradient(top, #0d0d0d, #000000) !important; 
+background: -moz-linear-gradient(top, #0d0d0d, #000000) !important; */
+background-image: url("./resources/images/black_gradient.png");
+background-repeat: repeat;
+}
+/* Class to style header nielsen logo */
+.nielsenLogo {
+color: #753c3c;
+font: bold 22px AktivGroteskEx_Bd !important;
+text-indent: 14px;
+vertical-align: middle;
+}
+/* Class to style PRODUCT REFERENCE APPLICATIONS title */
+.titleClass{
+font: medium 16px AktivGrotesk_A_Rg  !important;
+color: #000000;
+margin-left: 14px;
+}
+/* Class to style USER NAME*/
+.userNameClass{
+/*     background:#000000; 
+background: -ms-linear-gradient(top, #0d0d0d, #000000) !important;
+background: -webkit-linear-gradient(top, #0d0d0d, #000000) !important; 
+background: -moz-linear-gradient(top, #0d0d0d, #000000) !important; */
+background: transparent !important;
+}
+
+.userNameClass .x-btn-inner {
+font: bold 11px/14px AktivGrotesk_A_Rg  !important;
+color: #FFFFFF;
+text-transform: lowercase;
+}
+/* Tool Bar style */
+.toolBar{
+border-bottom: 1px solid #DDDDDD;
+color: #ffffff;
+background-color: #000000;
+}
+/* Module links style */
+.navigationBar{
+background:transparent !important;
+border-color: #000000;
+}
+.navigationBar .x-btn-inner {
+/*      text-decoration: underline !important; */
+font: bold 11px AktivGrotesk_A_Rg  !important;
+    
+} 
+.navigationBar.x-btn-over .x-btn-inner{
+font: bold 11px AktivGrotesk_A_Rg  !important;
+color: #ffffff;
+}
+.navigationBar.x-btn-pressed .x-btn-inner{
+font: bold 11px AktivGrotesk_A_Rg  !important;
+color: #ffffff;   
+}
+
+.navigationBarActive {
+background: transparent !important;
+border-color: #000000;
+
+}
+
+.navigationBarActive .x-btn-inner {
+border-bottom :2px solid lime;
+display: inline - block;
+font: bold 11px AktivGrotesk_A_Rg !important;
+color: #ffffff;
+}
+
+/*Accordian menu style override */
+.x-accordion-item .x-accordion-hd {
+background-color: #FFFFFF;
+
+}
+.x-accordion-hd .x-panel-header-text-container{
+color:#000000;
+font-size:14px;
+font-family:AktivGrotesk_A_Rg;
+}
+.x-menu-item-text{
+font: bold 12px AktivGrotesk_A_Rg  !important;
+color: #333333; 
+}
+
+.searchForm{
+border-top:1px solid #DDDDDD
+}
+.ruleSetHome{
+background-color: white;
+}
+.ruleSetHome .x-panel-header-default{
+background-color: white;
+
+}
+.ruleSetHome .x-panel-header-text-container-default{
+color:#000000;
+font-size:14px;
+font-family:AktivGrotesk_A_Rg;
+}
+/* QQ */
+/* Form Field Label style override */
+.x-form-item-label{
+/*     font: bold 12px AktivGrotesk_A_Rg  !important; */
+font-weight:bold;
+color: #000000;
+}
+/* Form Field user text  style override */
+.x-form-item, .x-form-field{
+font: normal 12px/14px AktivGrotesk_A_Rg  !important;
+color: #000000;
+}
+/*radio group items/check box style override */
+.x-form-cb-label{
+color: #000000;
+font-weight:bold;
+}
+/*form fields focus style override */
+.x-form-focus{
+border-color:#000000;
+}
+/*form field error message color override*/
+.x-form-type-text textarea.x-form-invalid-field, .x-form-type-text input.x-form-invalid-field,
+.x-form-type-password textarea.x-form-invalid-field,
+.x-form-type-password input.x-form-invalid-field, .x-form-type-number textarea.x-form-invalid-field,
+.x-form-type-number input.x-form-invalid-field, .x-form-type-email textarea.x-form-invalid-field,
+.x-form-type-email input.x-form-invalid-field, .x-form-type-search textarea.x-form-invalid-field,
+.x-form-type-search input.x-form-invalid-field, .x-form-type-tel textarea.x-form-invalid-field,
+.x-form-type-tel input.x-form-invalid-field {
+border-color: #FB087A;
+}
+/* Combo style override */
+.x-boundlist-item{
+font-size:12px;
+line-height:23px;
+padding:0 5px;
+}
+.x-boundlist-selected{
+background:#000000;
+border-color:#000000;
+color:#FFFFFF;
+}
+.x-boundlist-over{
+background:#83C73F;
+border-color:#83C73F;
+color:#FFFFFF;
+}
+
+/*Primary Button style */
+.primaryButton{
+/*     padding:2px 15px 2px 15px; */
+padding-top:1px;
+padding-bottom:2px;
+border-color:#000000;
+background-image: -ms-linear-gradient(top, #000000, #000000) !important;
+background-image: -webkit-linear-gradient(top, #000000, #000000) !important; 
+background-image: -moz-linear-gradient(top, #000000, #000000) !important;
+background-image: linear-gradient(top, #000000, #000000) !important;
+
+}
+
+.primaryButton .x-btn-inner {
+/*      To change button text col0r */
+font: bold 11px AktivGrotesk_A_Rg !important;
+color: #FFFFFF;
+}
+/* .primaryButton .x-btn-default-small{
+background:red;
+} */
+.primaryButton.x-btn-over {
+background: #00f000 !important;
+color:#000000 !important;
+border-color: #ffffff;
+
+/*       background-image:#000000; */
+}
+.primaryButton.x-btn-pressed{
+background:#000000 !important;  
+}
+
+/*Secondary Button style */
+.secondaryButton{
+/*     padding:2px 15px 2px 15px; */
+padding-top:2px;
+padding-bottom:2px;
+margin-left:5px;
+background-image: -ms-linear-gradient(top, #000000, #000000) !important;
+background-image: -webkit-linear-gradient(top, #000000, #000000) !important; 
+background-image: -moz-linear-gradient(top, #000000, #000000) !important;
+background-image: linear-gradient(top, #000000, #000000) !important;
+
+}
+.secondaryButton .x-btn-inner {
+/*      To change button text col0r */
+font: bold 11px AktivGrotesk_A_Rg  !important;
+color: #FFFFFF;    
+} 
+/* .primaryButton .x-btn-default-small{
+background:red;
+} */
+.secondaryButton.x-btn-over {
+background: #00f000 !important;
+color: #000000 !important;
+border-color: #ffffff;
+/*       background-image:#000000; */
+}
+
+.secondaryButton.x-btn-pressed {
+background: #000000 !important;
+}
+/*Grid style override */
+/*Styling alternate rows*/
+.x-grid-row .x-grid-cell { 
+background-color: #FFFFFF; 
+
+} 
+.x-grid-row-alt .x-grid-cell { 
+background-color: #FFFFFF; 
+
+}
+/*Grid row mouse over */
+.x-grid-row-over .x-grid-cell-inner {
+background-color: #D3D3D3;
+}
+/*selected row color */
+.x-grid-row-selected .x-grid-cell-inner {
+background-color: #D3D3D3;
+}
+/*grid row text style override*/
+.x-grid-cell-inner {
+font: regular 11px/14px AktivGrotesk_A_Rg  !important;
+color: #000000;
+}
+/*grid column text#E5E9ED, #ECEFF1 style override*/
+.x-column-header{
+border-color:#f2f2f2 !important;
+font: bold 11px AktivGrotesk_A_Rg  !important;
+color: #000000;
+background-image: -ms-linear-gradient(top, #ffffff, #ffffff) !important;
+background-image: -webkit-linear-gradient(top, #ffffff, #ffffff) !important; 
+background-image: -moz-linear-gradient(top, #ffffff, #ffffff) !important;
+background-image: linear-gradient(top, #ffffff, #ffffff) !important;
+}
+.x-column-header-over{
+border-color:#000000 !important;
+background-image: -ms-linear-gradient(top, #ffffff, #ffffff) !important;
+background-image: -webkit-linear-gradient(top, #ffffff, #ffffff) !important; 
+background-image: -moz-linear-gradient(top, #ffffff, #ffffff) !important;
+background-image: linear-gradient(top, #ffffff, #ffffff) !important;
+}
+.x-column-header-sort-ASC, .x-column-header-sort-DESC{
+border-color:#666666 !important;
+background-image:none !important;
+background-image: -ms-linear-gradient(top, #ffffff, #ffffff) !important;
+background-image: -webkit-linear-gradient(top, #ffffff, #ffffff) !important; 
+background-image: -moz-linear-gradient(top, #ffffff, #ffffff) !important;
+background-image: linear-gradient(top, #ffffff, #ffffff) !important;
+}
+.x-column-header-over, .x-column-header-sort-ASC, .x-column-header-sort-DESC{
+border:#666666 !important;
+}
+.x-panel-body-default{
+color:#000000;
+}
+.footer {
+border-top: 2px solid #D3D3D3 ;
+background-color: #D3D3D3;
+font: regular 10px/12px AktivGrotesk_A_Rg !important;
+color: #000000;
+}
+/* Class to style header nielsen logo */
+.gridDeleteIcon {
+background:transparent url(./resources/images/remove.png) 0 0 no-repeat !important;
+
+}
+.gridMoveUpIcon {
+background:transparent url(./resources/images/up.png) 0 0 no-repeat !important;
+}
+
+.gridMoveDownIcon {
+background:transparent url(./resources/images/down.png) 0 0 no-repeat !important;  
+}
+
+/* .gridRowMarkRed .x-grid-cell{
+background-color: #81F781 !important;
+color:red;
+} */
+/* .gridRowMarkRed .x-cell {
+color:green;
+} */
+.green-row .x-grid-cell-inner {
+/*         background-color: #000000 !important; */
+color:red;
+}
+/* used in PIM VERIFY. */
+.redColorText{
+/*    background-image:none;
+background-color:#FFFFCC; */
+color:red;
+}
+.blackColorText{
+/*    background-image:none;
+background-color:#FFFFCC; */
+color:black;
+}
+.redColorText1{
+/*    background-image:none; */
+background-color:#FFFFCC; 
+color:#fb087a;
+}
+@font-face
+           {
+        font-family: AktivGrotesk_A_Rg;
+        src: url("./resources/Fonts/AktivGrotesk_A_Rg.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+           } 
+@font-face
+           {
+        
+        font-family: AktivGroteskEx_Bd;
+        src: url("./resources/Fonts/AktivGroteskEx_Bd.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+           }
+
+/* .pimVerifyText .x-form-item, .x-form-field{
+color:red;
+} */
+/* .pimVerifyText .x-form-field{
+color:red;
+} */

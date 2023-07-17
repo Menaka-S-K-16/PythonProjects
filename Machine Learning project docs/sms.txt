@@ -1,0 +1,83 @@
+using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+using System.IO;
+using System.Net;
+using System.Collections.Specialized;
+using System.Data.SqlClient;
+public partial class Default3 : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        GridView1.Visible = true;
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        string username;
+        string mobilenumber;
+
+        String myquery = "Select mobilenumber from skill where skillset='" + TextBox2.Text + "'";
+        SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Kannan SA\Documents\bi-edges.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True");
+        SqlCommand cmd = new SqlCommand();
+        cmd.CommandText = myquery;
+        cmd.Connection = con;
+        con.Open();
+        SqlDataReader dr;
+        dr = cmd.ExecuteReader();
+        while (dr.Read())
+        {
+            mobilenumber = dr.GetString(0);
+            sendsms(mobilenumber);
+
+            String myquer = "Select username from student where mobilenumber=" + mobilenumber + "";
+            SqlConnection connecter = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=C:\Users\Kannan SA\Documents\bi-edges.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True");
+            SqlCommand executer;
+            connecter.Open();
+            executer = new SqlCommand(myquer, connecter);
+            SqlDataReader data;
+            data = executer.ExecuteReader();
+            data.Read();
+            username = data.GetString(0);
+            ListBox1.Items.Add(mobilenumber + " " + username);
+            data.Close();
+        }
+        Label1.Text = "SMS Sent Successfully to All Students";
+        con.Close();
+        GridView1.Visible = false;
+        ListBox1.Visible = true;
+    }
+    private void sendsms(string mnumber)
+    {
+        string destinationaddr = mnumber;
+        string message = TextBox1.Text;
+        string result;
+        String message1 = HttpUtility.UrlEncode(message);
+        using (var wb = new WebClient())
+        {
+            byte[] response = wb.UploadValues("https://api.textlocal.in/send/", new NameValueCollection()
+                {
+                {"apikey" , "VIP7/n79EaM-EzDaaFuTsouzBK0UOUTDQDI3teVZ1m"},
+                {"numbers" , destinationaddr},
+                {"message" , message1},
+                {"sender" , "TXTLCL"}
+                });
+            result = System.Text.Encoding.UTF8.GetString(response);
+
+
+
+        }
+    }
+}
